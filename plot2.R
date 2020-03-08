@@ -18,5 +18,5 @@ date_time <- paste(as.Date(feb_data$Date), feb_data$Time)
 feb_data$Datetime <- as.POSIXct(date_time)
 
 png("plot2.png", width=480, height=480)
-with(feb_data, plot(Global_active_power~Datetime, type="l", xlab="", ylab="Global Active Power (kilowatts"))
+with(feb_data, plot(Global_active_power~Datetime, type="l", xlab="", ylab="Global Active Power (kilowatts)"))
 dev.off()
